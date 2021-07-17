@@ -1,0 +1,5 @@
+  199  cat animais_fofos.txt
+  200  cat fofinhos_raivosos.txt
+  201  cat fofinhos_raivosos.txt >> animais_raivosos.txt
+  202  history
+  203  clear
