@@ -1,4 +1,4 @@
-//Primeiros 5 programas
+//Prgrama 1
 
 // let a = 7;
 // let b = 3;
@@ -10,10 +10,10 @@
 // console.log(a % b);
 
 
-//Programa 6
+//Programa 2
 
-// var a = 25;
-// var b = 36;
+// let a = 25;
+// let b = 36;
 
 // if (a > b) {
 //     console.log('o maior numero é ' +  a);
@@ -23,11 +23,11 @@
 // }
 
 
-//Programa 7
+//Programa 3
 
-// var a = 400;
-// var b = 400;
-// var c = 400;
+// let a = 400;
+// let b = 400;
+// let c = 400;
 
 // if (a > b && a > c) {
 //     console.log('o maior numero é ' +  a);
@@ -43,26 +43,21 @@
 // }
 
 
-//Programa 8
+//Programa 4
 
-// var classe = "knight";
+// 
+// let number = 4;
 
-// switch (classe) {
-//     case 'mago':
-//         console.log('false');
-//         break;
-    
-//     case 'knight':
-//         console.log('true');
-//         break;
-
-//     default:
-//         console.log('zero')
-//         break;
-// }
+// if (number > 0) {
+//   console.log('positive');
+// } else if (number < 0) {
+//   console.log('negative');
+// } else {
+//   console.log('zero');
+// };
 
 
-//Programa 9
+//Programa 5
 
 // let angulo1 = 30;
 // let angulo2 = 20;
@@ -87,7 +82,7 @@
 // console.log(eValido);
 
 
-//Programa 10
+//Programa 6
 
 // var piece = 'bishop';
 
@@ -102,7 +97,7 @@
 // }
 
 
-//Programa 11
+//Programa 7
 
 // var Porcentagem = 101;
 
@@ -131,5 +126,89 @@
 // console.log(Porcentagem);
 
 
-//Programa 12
+//Programa 8
 
+// let a = 3;
+// let b = 7;
+// let c = 13;
+
+// let isEven = false;
+
+// if (a%2 == 0 || b%2 == 0 || c%2 == 0) {
+//     isEven = true;
+// } else {
+//     isEven = false;
+// }
+
+// console.log(isEven);
+
+
+//Programa 9
+
+// let a = 0;
+// let b = 2;
+// let c = 4;
+
+// let isOdd = false;
+
+// if (a%2 == 1 || b%2 == 1 || c%2 == 1) {
+//     isOdd = true;
+// } else {
+//     isOdd = false;
+// }
+
+// console.log(isOdd);
+
+
+//Programa 10
+
+// let custo = 300;
+// let venda = 360;
+
+// if (custo >=0 && venda >= 0) {
+//     custo *= 1.2;
+//     let lucro = (venda - custo) * 1000;
+//     console.log(lucro);
+// } else {
+//     console.log('Erro, Numero inválido');   
+// }
+
+
+//Programa 11
+
+let salarioBruto = 3000;
+let salarioLiquido = null;
+let salarioBase = null;
+
+if (salarioBruto <= 1556.94) {
+    let aliquotaINSS = (8 / 100) * salarioBruto;
+    salarioBase = salarioBruto - aliquotaINSS;
+} else if (salarioBruto <= 2594.92) {
+    let aliquotaINSS = (9 / 100) * salarioBruto;
+    salarioBase = salarioBruto - aliquotaINSS;
+} else if (salarioBruto <= 5189.82) {
+    let aliquotaINSS = (11 / 100) * salarioBruto;
+    salarioBase = salarioBruto - aliquotaINSS;
+} else if (salarioBruto > 5189.82) {
+    let aliquotaINSS = 570.88;
+    salarioBase = salarioBruto - aliquotaINSS;
+}
+
+if (salarioBase <= 1903.98) {
+    let aliquotaIR = 0;
+    salarioLiquido = salarioBase - aliquotaIR;
+} else if (salarioBase <= 2826.65) {
+    let aliquotaIR = (7.5 / 100) * salarioBase - 142.80;
+    salarioLiquido = salarioBase - aliquotaIR;
+} else if (salarioBase <= 3751.05) {
+    let aliquotaIR = (15 / 100) * salarioBase - 354.80;
+    salarioLiquido = salarioBase - aliquotaIR;
+} else if (salarioBase <= 4664.68) {
+    let aliquotaIR = (22.5 / 100) * salarioBase - 636.13;
+    salarioLiquido = salarioBase - aliquotaIR;
+} else if (salarioBase > 4664.68) {
+    let aliquotaIR = (27.5 / 100) * salarioBase - 869.36;
+    salarioLiquido = salarioBase - aliquotaIR;
+}
+
+console.log(salarioLiquido);
