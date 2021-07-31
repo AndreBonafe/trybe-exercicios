@@ -23,3 +23,59 @@
 //     console.log("valor menor que 16");
 // }
 
+
+/////////////////////////////////////////////////////////////////////
+
+// Exercicios
+
+/////////////////////////////////////////////////////////////////////
+
+// Exercicio 1;
+// let n = 5
+// let asterisco = '*';
+// let input = '';
+
+// for (let i = 1; i <= n; i += 1) {
+//     input = asterisco + input;
+// }
+// for (let i = 1; i <= n; i += 1) {
+//     console.log(input);
+// }
+
+
+/////////////////////////////////////////////////////////////////////
+
+
+// Exercicio 2;
+// let n = 50
+// let asterisco = '*';
+// let input = '';
+
+// for (let i = 1; i <= n; i += 1) {
+//     input = asterisco + input;
+//     console.log(input);
+// }
+
+
+/////////////////////////////////////////////////////////////////////
+
+
+// Exercicio 3;
+// let n = 5
+// let asterisco = '*';
+// let input = '';
+// let line = n-1;
+// let imprimeAst = n - line;
+
+// for (let i = 0; i < n; i +=1) {
+//     input = '';
+//     for (let index = 1; index <= line; index += 1){
+//         input = input + ' ';
+//     }
+//     for (let index = 1; index <= imprimeAst; index += 1) {
+//         input += asterisco;
+//     }
+//     line -= 1;
+//     imprimeAst = n - line;
+//     console.log(input);
+// }
