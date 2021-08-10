@@ -1,0 +1,9 @@
+document.querySelector("h1").style.backgroundColor = 'green';
+document.querySelector("h1").style.padding = '100px auto';
+document.querySelector(".emergency-tasks").style.backgroundColor = '#f2a283';
+document.querySelectorAll(".emergency-tasks div h3")[0].style.backgroundColor = 'purple';
+document.querySelectorAll(".emergency-tasks div h3")[1].style.backgroundColor = 'purple';
+document.querySelector(".no-emergency-tasks").style.backgroundColor = '#e0c946';
+document.querySelectorAll(".no-emergency-tasks div h3")[0].style.backgroundColor = 'black';
+document.querySelectorAll(".no-emergency-tasks div h3")[1].style.backgroundColor = 'black';
+document.querySelector("footer").style.backgroundColor = 'darkGreen';
