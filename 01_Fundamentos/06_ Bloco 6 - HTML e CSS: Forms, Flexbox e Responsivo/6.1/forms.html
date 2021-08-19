@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+  <h1>Formulário de Currículo</h1>
+  <form action="" method="GET">
+      <fieldset>
+      <div class="style-line">
+        <label for="name">Nome:</label>
+        <input class="" id="name" type="text" maxlength="40" autocomplete="off" name="name" required>
+      </div>
+      
+      <div class="style-line">
+        <label for="email">Email:</label>
+        <input class="" id="email" type="email" maxlength="50" autocomplete="off" name="email" required>
+      </div>
+
+      <div class="style-line">
+        <label for="cpf">CPF:</label>
+        <input class="" id="cpf" type="text" autocomplete="off" name="cpf" required>
+      </div>
+
+      <div class="style-line">
+        <label for="endereço">Endereço:</label>
+        <input class="" id="endereço" type="text" maxlength="200" autocomplete="off" name="endereço" required>
+      </div>
+
+      <div class="style-line">
+        <label for="city">Cidade:</label>
+        <input class="" id="city" type="text" maxlength="28" autocomplete="off" name="city" required>
+      </div>
+
+      <div class="style-line">
+        <p>Estado:
+        <select name="states" id="states" required>
+        </select>
+      </p>
+      </div>
+
+      <div class="style-line">
+        <p>Tipo:
+          <label for="casa"><input type="radio" name="tipo" id="casa" required>Casa</label>
+          <label for="Apartamento"><input type="radio" name="tipo" id="Apartamento" required>Apartamento</label> 
+        </p>
+      </div>
+    </div>
+
+
+    </fieldset>
+    <fieldset>
+      <div class="curriculo">
+        <div class="style-line">
+          <label for="resume">Resumo do currículo:</label> <br>
+          <textarea name="resume" id="resume" maxlength="1000" cols="30" rows="10" required autocomplete="off" ></textarea>
+        </div>
+        <div class="style-line">
+          <label for="carg">Cargo:</label>
+          <input type="text" name="carg" id="carg" maxlength="40" required autocomplete="off" >
+        </div>
+        <div class="style-line">
+          <label for="descr">Descrição do cargo:</label>
+          <input type="text" name="descr" id="descr" maxlength="500" required autocomplete="off" >
+        </div>
+        <div class="style-line">
+          <label for="date">Data:</label>
+          <input type="text" name="date" id="date" maxlength="10" required autocomplete="off" >
+        </div>
+    </fieldset>
+    <button type="submit" id="button">Enviar</button>
+  </form>
+</body>
+
+<script src="script.js">
+</script>
+
+</html>
