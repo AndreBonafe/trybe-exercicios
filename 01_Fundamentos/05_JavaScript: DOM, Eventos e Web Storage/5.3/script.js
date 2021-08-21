@@ -1,3 +1,4 @@
+  // Escreva seu código abaixo.
 window.onload = function() {
     function createDaysOfTheWeek() {
         const weekDays = ['Domingo', 'Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sábado']
@@ -13,15 +14,18 @@ window.onload = function() {
     };
     
     createDaysOfTheWeek();
-
+    const dezDaysList = [29, 30, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31];
+    
     function createMonthDays() {
-        const dezDaysList = [29, 30, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31];
         const dias = document.querySelector('#days');
         
         for (let i = 0; i < dezDaysList.length; i += 1) {
             const nmbrs = dezDaysList[i]
             const list = document.createElement('li');
             list.innerText = nmbrs;
+            list.addEventListener('mouseover', zoomIn);
+            list.addEventListener('mouseleave', zoomOff);
+            list.addEventListener('click', colorTask);
             list.classList.add('day');
 
             if (i === 25 | i === 26 | i === 32) {
@@ -74,7 +78,7 @@ window.onload = function() {
         if (clickedH === false){
             clickedH = true;
             for (let i in hlds){
-            hlds[i].style.backgroundColor = 'blue';
+            hlds[i].style.backgroundColor = 'white';
         }
         } else {
             clickedH = false;
@@ -109,6 +113,59 @@ window.onload = function() {
         }
     }
 
+    function zoomIn(event) {
+        const day = event.target;
+        day.style.fontSize = '40px';
+    }
+    function zoomOff(event) {
+        const day = event.target;
+        day.style.fontSize = '20px';
+    }
 
+    document.querySelector('#btn-add').addEventListener('click', createTask);
+
+    function createTask() {
+        const task = document.querySelector('#task-input');
+        const span = document.createElement('span');
+        const parent = document.querySelector('.input-container');
+        span.innerText = task.value;
+        parent.appendChild(span);
+        task.value = '';
+    }
+
+    function taskLegend(color) {
+        const parent = document.querySelector('.my-tasks');
+        const span = document.createElement('span');
+        const div = document.createElement('div');
+        div.className = 'task';
+        span.innerText = 'Projeto:'
+        div.style.backgroundColor = color;
+        parent.appendChild(span);
+        parent.appendChild(div);
+    }
+
+    var selectedColor = '';
+
+    taskLegend('lightGreen');
+    const task =  document.querySelector('.task');
+    task.addEventListener('click', function(){
+        if (task.classList.contains('selected')) {
+            task.classList.remove('selected');
+            selectedColor = '';  
+        } else {
+            task.classList.add('selected');
+            selectedColor = document.querySelector('.selected').style.backgroundColor;
+        }
+    })
+
+    
+
+    function colorTask(event) {
+        const target = event.target;
+        if (target.style.color !== selectedColor) {
+            target.style.color = selectedColor;
+        } else {
+            target.style.color = 'rgb(119,119,119)';
+        }
+    }
 };
-  // Escreva seu código abaixo.
