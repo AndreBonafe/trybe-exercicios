@@ -20,7 +20,7 @@ createOptions()
 
 const button = document.querySelector('#button');
 button.addEventListener('click', function (event){
-  event.preventDefault();
+  
   const date = document.querySelector('#date').value;
 
   const day = parseInt(date.substring(0, 2));

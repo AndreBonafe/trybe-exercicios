@@ -1,0 +1,24 @@
+h1 {
+    text-align: center;
+    padding: 20px 0;
+}
+
+form {
+    max-width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.form-check {
+    align-self: flex-start;
+}
+
+.form-group {
+    align-self: stretch;
+}
+
+.buttons {
+    margin-bottom: 25px;
+}
