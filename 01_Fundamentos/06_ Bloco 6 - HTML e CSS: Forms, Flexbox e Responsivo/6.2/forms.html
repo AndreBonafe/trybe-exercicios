@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap-5.1.0-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="dist/css/DatePickerX.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Forms</title>
+</head>
+<body>
+  <h1 class="text-muted">Formulário de Currículo</h1>
+  <form action="" method="GET" class="js-form">
+    <div class="input-group mb-3">
+      <label for="name" class="input-group-text">Nome:</label>
+      <input class="form-control" id="name" type="text" maxlength="40" autocomplete="off" name="name" data-validate-field="name" required>
+    </div>
+    
+    <div class="input-group mb-3">
+      <label for="email" class="input-group-text">Email:</label>
+      <input class="form-control" id="email" type="email" maxlength="50" autocomplete="off" name="email" data-validate-field="email" required>
+    </div>
+
+    <div class="input-group mb-3">
+      <label for="cpf" class="input-group-text">CPF:</label>
+      <input class="form-control" id="cpf" type="text" autocomplete="off" name="cpf" data-validate-field="cpf" required>
+    </div>
+
+    <div class="input-group mb-3">
+      <label for="adress" class="input-group-text">Endereço:</label>
+      <input class="form-control" id="adress" type="text" maxlength="200" autocomplete="off" name="endereço" data-validate-field="adress" required>
+    </div>
+
+    <div class="input-group mb-3">
+      <label for="city" class="input-group-text">Cidade:</label>
+      <input class="form-control" id="city" type="text" maxlength="28" autocomplete="off" name="city" data-validate-field="city" required>
+    </div>
+
+    <div class="form-group">
+      <p>Estado:
+      <select name="states" id="states" class="form-select" data-validate-field="states" required>
+      </select>
+    </p>
+    </div>
+
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="flexRadioDefault" data-validate-field="radio" id="Casa">
+      <label class="form-check-label" for="Casa">
+        Casa
+      </label>
+    </div>
+    
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="flexRadioDefault" data-validate-field="radio" id="Apartamento" checked>
+      <label class="form-check-label" for="Apartamento">
+        Apartamento
+      </label>
+    </div>
+    
+    <div class="input-group">
+      <label for="resume" class="input-group-text">Resumo do currículo:</label> <br>
+      <textarea name="resume" id="resume" maxlength="1000" cols="30" rows="10" required autocomplete="off" class="form-control" data-validate-field="resume"></textarea>
+    </div>
+    
+    <div class="input-group mb-3">
+      <label for="carg" class="input-group-text">Cargo:</label>
+      <input class="form-control" type="text" name="carg" id="carg" maxlength="40" required autocomplete="off" data-validate-field="carg">
+    </div>
+    
+    <div class="input-group mb-3">
+      <label for="descr" class="input-group-text">Descrição do cargo:</label>
+      <input class="form-control" type="text" name="descr" id="descr" maxlength="500" required autocomplete="off" data-validate-field="descr">
+    </div>
+    
+    <div class="input-group mb-3">
+      <label for="date" class="input-group-text">Data:</label>
+      <input class="form-control" type="text" name="date" id="date" maxlength="10" required autocomplete="off" placeholder="DD/MM/AAAA" data-validate-field="date">
+    </div>
+    <div class="buttons">
+      <button type="submit" id="button" class="btn btn-success">Enviar</button>
+      <button type="button" class="btn btn-danger clear-button">Limpar</button>
+    </div>
+  </form>
+
+<script src="dist/js/DatePickerX.min.js"></script>
+<script src="node_modules/just-validate/dist/js/just-validate.min.js"></script>
+<script src="jquery-3.6.0.min.js"></script>
+<script src="script.js"></script>
+<script src="bootstrap-5.1.0-dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
