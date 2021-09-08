@@ -46,3 +46,20 @@ const randomNumber = (min, max) => {
 const RIGHT_ANSWERS = ['A', 'C', 'B', 'D', 'A', 'A', 'D', 'A', 'D', 'C'];
 const STUDENT_ANSWERS = ['A', 'N.A', 'B', 'D', 'A', 'C', 'N.A', 'A', 'D', 'B'];
 
+const compare = (array1, array2, compare) => {
+  let points = 0;
+  for (let i = 0; i < array1.length; i += 1) {
+    const compareReturn = compare(array1[i], array2[i]);
+    points += compareReturn;
+  }
+  return `Você fez ${points} pontos.`
+}
+
+// console.log(compare(RIGHT_ANSWERS, STUDENT_ANSWERS, (array1, array2) => {
+//   if (array1 === array2) {
+//     return 1;
+//   } if (array2 === 'N.A') {
+//     return 0;
+//   }
+//   return -0.5;
+// }));
