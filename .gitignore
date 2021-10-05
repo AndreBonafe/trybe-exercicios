@@ -13,5 +13,4 @@
 # Ignore all local history of files
 .history
 .ionide
-/home/derev/exercicios_trybe/01_Fundamentos/10_Jest
 # End of https://www.toptal.com/developers/gitignore/api/visualstudiocode
