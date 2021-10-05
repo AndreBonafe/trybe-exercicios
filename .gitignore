@@ -13,6 +13,5 @@
 # Ignore all local history of files
 .history
 .ionide
-01_Fundamentos/10_Jest/10.1/node_modules
-01_Fundamentos/10_Jest/10.2/node_modules
+01_Fundamentos/10_Jest
 # End of https://www.toptal.com/developers/gitignore/api/visualstudiocode
