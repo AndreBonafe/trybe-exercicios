@@ -1,0 +1,29 @@
+.pokemon {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid black;
+  margin: 20px;
+  border-radius: 5%;
+  box-sizing: border-box;
+  width: 41%;
+}
+
+.pokemon img {
+  align-self: flex-end;
+  margin: 8px;
+}
+
+.pokemon-p {
+  text-align: center;
+  display: flex;
+  flex-flow: column wrap;
+  line-height: 0px;
+  margin: 8px;
+}
+
+.pokedex {
+  display: flex;
+  flex-flow: row wrap;
+}
