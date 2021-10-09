@@ -1,5 +1,6 @@
 import React from 'react';
 import Name from './Name';
+import Email from './Email';
 
 class Forms extends React.Component {
   constructor() {
@@ -7,6 +8,7 @@ class Forms extends React.Component {
 
     this.state = {
       name: '',
+      email: '',
     }
   }
 
@@ -24,6 +26,7 @@ class Forms extends React.Component {
         <form>
           <fieldset className='personal-data'>
           <Name functionHandler={this.handleChanges} value={this.state.name.length}/>
+          <Email functionHandler={this.handleChanges} value={this.state.name.length}/>
           </fieldset>
         </form>
       </div>  
