@@ -3,6 +3,7 @@ import Name from './Name';
 import Email from './Email';
 import CPF from './CPF';
 import Adress from './Adress';
+import City from './City';
 
 class Forms extends React.Component {
   constructor() {
@@ -12,6 +13,7 @@ class Forms extends React.Component {
       name: '',
       email: '',
       cpf: '',
+      city: '',
     }
   }
 
@@ -29,6 +31,12 @@ class Forms extends React.Component {
     })
   }
 
+  handleBlur = ({ target }) => {
+    if (!isNaN(this.state.city[0])) {
+      target.value = '';
+    }
+  }
+
   render() {
     return (
       <div class="Forms">  
@@ -40,6 +48,7 @@ class Forms extends React.Component {
           <Email functionHandler={this.handleChanges} />
           <CPF functionHandler={this.handleChanges} />
           <Adress functionHandler={this.handleRemoveSpecialCharacters} />
+          <City functionHandler={this.handleRemoveSpecialCharacters} functionHandlerBlur={this.handleBlur} />
           </fieldset>
         </form>
       </div>  
