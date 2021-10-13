@@ -20,3 +20,11 @@ label {
 .Radio-Buttons {
   display: flex;
 }
+
+h2 {
+  text-align: center;
+}
+
+.form-data {
+  margin-bottom: 40px;
+}
