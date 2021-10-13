@@ -4,6 +4,7 @@ import Email from './Email';
 import CPF from './CPF';
 import Adress from './Adress';
 import City from './City';
+import State from './State';
 
 class Forms extends React.Component {
   constructor() {
@@ -23,6 +24,13 @@ class Forms extends React.Component {
       [name]: value,
     })
   }
+  
+  handleUppercase = ({ target }) => {
+    const { name, value } = target
+    this.setState({
+      [name]: value.toUpperCase(),
+    })
+  }
 
   handleRemoveSpecialCharacters = ({ target }) => {
     const { name, value } = target
@@ -39,16 +47,17 @@ class Forms extends React.Component {
 
   render() {
     return (
-      <div class="Forms">  
+      <div className="Forms">  
         <h1>Meu Formulario!</h1>
         <form>
           <h2> Informações Pessoais: </h2>
           <fieldset className='personal-data'>
-          <Name functionHandler={this.handleChanges} value={this.state.name.length} />
+          <Name functionHandler={this.handleUppercase} value={this.state.name.length} />
           <Email functionHandler={this.handleChanges} />
           <CPF functionHandler={this.handleChanges} />
           <Adress functionHandler={this.handleRemoveSpecialCharacters} />
-          <City functionHandler={this.handleRemoveSpecialCharacters} functionHandlerBlur={this.handleBlur} />
+          <State functionHandler={this.handleChanges}/>
+          <City functionHandler={this.handleChanges} functionHandlerBlur={this.handleBlur} />
           </fieldset>
         </form>
       </div>  

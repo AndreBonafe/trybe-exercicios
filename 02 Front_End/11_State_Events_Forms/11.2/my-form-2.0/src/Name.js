@@ -9,9 +9,7 @@ class Name extends React.Component {
 
     return (
       <label> Nome:
-        <input onChange={this.props.functionHandler} name='name' style={{
-          textTransform: "uppercase",
-        }} required maxLength={40} autoComplete="off"/>
+        <input onChange={this.props.functionHandler} name='name' required maxLength={40} autoComplete="off"/>
         <span>{error ? error : ''}</span>
       </label>
       );
