@@ -13,9 +13,6 @@
 }
 
 label {
-  margin: 5px;
-}
-
-input {
-  margin-left: 5px;
+  display: flex;
+  flex-direction: column;
 }
