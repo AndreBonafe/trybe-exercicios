@@ -93,8 +93,10 @@ class Forms extends React.Component {
               <textarea required onChange={this.handleChanges} name='cargDes' maxLength={500}/>
             </label>
           </fieldset>
+          <div className="buttons">
           <button>Enviar</button>
           <button type="reset" onClick={this.resetForm}>Limpar</button>
+          </div>
         </form>
         { this.state.submitted && <FormDataDisplay infos={this.state} /> }
       </div>  
