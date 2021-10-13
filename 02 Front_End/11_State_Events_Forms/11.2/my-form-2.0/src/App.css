@@ -16,3 +16,7 @@ label {
   display: flex;
   flex-direction: column;
 }
+
+.Radio-Buttons {
+  display: flex;
+}

@@ -16,11 +16,11 @@ class State extends React.Component {
     <div>
     <span id="demo">Estado:</span>
       <Combobox aria-labelledby="demo">
-        <ComboboxInput autocomplete={false} onChange={this.props.functionHandler} name='estado'/>
+        <ComboboxInput onChange={this.props.functionHandler} name='estado' placeholder='Escreva a Sigla'/>
         <ComboboxPopover>
           <ComboboxList>
           {
-            states.slice(0, 10).map((result, index) => (
+            states.map((result, index) => (
               <ComboboxOption
                 key={index}
                 value={result}

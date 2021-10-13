@@ -5,6 +5,7 @@ import CPF from './CPF';
 import Adress from './Adress';
 import City from './City';
 import State from './State';
+import Type from './Type';
 
 class Forms extends React.Component {
   constructor() {
@@ -49,7 +50,7 @@ class Forms extends React.Component {
     return (
       <div className="Forms">  
         <h1>Meu Formulario!</h1>
-        <form>
+        <form autoComplete="off">
           <h2> Informações Pessoais: </h2>
           <fieldset className='personal-data'>
           <Name functionHandler={this.handleUppercase} value={this.state.name.length} />
@@ -58,6 +59,7 @@ class Forms extends React.Component {
           <Adress functionHandler={this.handleRemoveSpecialCharacters} />
           <State functionHandler={this.handleChanges}/>
           <City functionHandler={this.handleChanges} functionHandlerBlur={this.handleBlur} />
+          <Type functionHandler={this.handleChanges}/>
           </fieldset>
         </form>
       </div>  
