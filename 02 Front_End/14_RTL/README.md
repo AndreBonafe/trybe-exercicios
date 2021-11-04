@@ -1,0 +1,3 @@
+# O que vamos aprender?
+
+Testes automatizados são parte fundamental de qualquer software de qualidade, e com React não é diferente. Sendo React uma biblioteca recente, a melhor forma de se escrever testes automatizados para ele não é um assunto dado como encerrado, ainda que o runner mais usado e recomendado seja o Jest. A biblioteca de testes para React com maior adoção é a enzyme , desenvolvida pela Airbnb. A biblioteca recomendada pela documentação , por outro lado, é a react-testing-library , desenvolvida por Kent C. Dodds. Por razões que ficarão claras ao longo do dia de hoje, nós aprenderemos a usar a react-testing-library , mas desde já mantenha a enzyme no seu radar, pois você pode trombar com ela no futuro!
