@@ -1,0 +1,2 @@
+# O que é Docker?
+O termo Docker se refere a muitas coisas: um projeto da comunidade open source; as ferramentas resultantes desse projeto; a empresa Docker Inc., principal apoiadora do projeto; e as ferramentas compatíveis formalmente com a empresa.
